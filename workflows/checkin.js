@@ -239,7 +239,7 @@ class CheckIn {
     try {
       await juejin.login(this.cookie);
     } catch (e) {
-      console.log(this.cookie)
+      console.log('message', this.cookie)
       console.error(e.message);
       throw new Error("登录失败, 请尝试更新Cookies!");
     }
